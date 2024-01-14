@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    hanging-punctuation: first last;
+    /* color-scheme: light dark; */
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    max-width: 100%; /* dont't overflow container */
+    vertical-align: middle; /* remove bottom spacing */
+}
+img {
+    height: auto; /* maintain proportiions */
+    /* font-style: italic;  */ /* for alt text */
+    /* next two for slow loading images (need to provide lowres for preload) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem; /* for text to wrap around floated images, use with shape-outside */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+p {
+    max-inline-size: 80ch;
+    text-wrap: pretty; /* prevents orphans */
+}
+
+button {
+    cursor: pointer;
+}
+
+:has(:target), html {
+    scroll-padding-top: 1rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target), html {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+}
