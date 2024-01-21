@@ -39,6 +39,9 @@ ul {
 
     nav & {
         gap: 2rem;
+        & li {
+           flex-basis: auto; 
+        }
     }
 
     & li {
@@ -98,9 +101,23 @@ figcaption {
 
 blockquote {
     background: var(--grey);
+    padding-block: 6rem;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 300;
 
     &>* {
         max-width: var(--page-width);
         margin-inline: auto;
+        padding-inline: 6rem;
+    }
+    & footer {
+        text-align: right;
+        font-weight: 900;
+        font-size: 1.5rem;
+        font-style: normal;
+        &::before {
+            content: "\2014"
+        }
     }
 }
