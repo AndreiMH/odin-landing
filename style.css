@@ -3,7 +3,9 @@
     --light: #F9FaF8;
     --grey: #E5E7Eb;
     --cta: #3882F6;
+    --page-width: 1024px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .hero {
@@ -11,17 +13,17 @@
     color: var(--light);
 
     &>* {
-        max-width: 1080px;
+        max-width: var(--page-width);
         margin-inline: auto;
     }
 }
 
 nav {
-    padding-block: 2rem;
+    padding-block: 1.2rem;
     display: flex;
     justify-content: space-between;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
 
     & ul {
         display: flex;
@@ -37,4 +39,24 @@ nav {
             }
         }
     }
+}
+header {
+    display: flex;
+    padding-block: 6rem;
+    gap: 2rem;
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+button {
+    background: var(--cta);
+    color: var(--light);
+    font-weight: 500;
+    margin-block: 1rem;
+    padding: .5rem 2.25rem;
+    border-radius: .5rem;
 }

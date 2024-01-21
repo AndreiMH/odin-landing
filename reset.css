@@ -30,9 +30,9 @@ img {
     shape-margin: 1rem; /* for text to wrap around floated images, use with shape-outside */
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-}
+} */
 
 p {
     max-inline-size: 80ch;
@@ -41,6 +41,7 @@ p {
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 :has(:target), html {
