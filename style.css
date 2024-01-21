@@ -121,3 +121,24 @@ blockquote {
         }
     }
 }
+
+.cta {
+    margin: 6rem auto;
+    max-width: var(--page-width);
+    background: var(--cta);
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    color: var(--light);
+
+    & button {
+        border: 2px solid var(--light);
+        margin: 0;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
