@@ -23,16 +23,16 @@ img, picture, svg, video {
 }
 img {
     height: auto; /* maintain proportiions */
-    /* font-style: italic;  */ /* for alt text */
+    font-style: italic;  /* for alt text */
     /* next two for slow loading images (need to provide lowres for preload) */
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 1rem; /* for text to wrap around floated images, use with shape-outside */
 }
 
-/* h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-} */
+}
 
 p {
     max-inline-size: 80ch;

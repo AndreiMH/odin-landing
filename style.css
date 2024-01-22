@@ -62,6 +62,7 @@ header {
 h1 {
     font-size: 3rem;
     font-weight: 700;
+    text-wrap: wrap;
 }
 
 h2 {
